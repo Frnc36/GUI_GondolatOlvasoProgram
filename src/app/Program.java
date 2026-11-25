@@ -2,15 +2,20 @@ package app;
 
 import controller.JatekController;
 import model.Pakli;
-import view.Nezet;
+import view.GUINezet;
 
 public class Program {
 
-    public static void main(String[] args) {
-        Pakli pakli = new Pakli();
-        Nezet nezet = new Nezet();
-        JatekController controller = new JatekController(pakli, nezet);
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                Pakli pakli = new Pakli();
+                GUINezet nezet = new GUINezet();
+                JatekController controller = new JatekController(pakli, nezet);
 
-        controller.indit();
+                nezet.setVisible(true);
+                controller.indit();
+            }
+        });
     }
 }
