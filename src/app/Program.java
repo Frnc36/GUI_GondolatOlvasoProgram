@@ -2,13 +2,13 @@ package app;
 
 import controller.JatekController;
 import model.Pakli;
-import view.KonzolNezet;
+import view.Nezet;
 
 public class Program {
 
     public static void main(String[] args) {
         Pakli pakli = new Pakli();
-        KonzolNezet nezet = new KonzolNezet();
+        Nezet nezet = new Nezet();
         JatekController controller = new JatekController(pakli, nezet);
 
         controller.indit();

@@ -1,11 +1,8 @@
 package view;
 
-import java.util.Scanner;
 import model.Lap;
 
-public class KonzolNezet {
-
-    private Scanner sc = new Scanner(System.in);
+public class Nezet {
 
     public void kirak(Lap[] lapok) {
         for (int i = 0; i < 3; i++) {
@@ -20,13 +17,8 @@ public class KonzolNezet {
         }
     }
 
-    public int melyik() {
-        int oszlop;
-        do {
-            System.out.print("Melyik oszlop (1-3): ");
-            oszlop = sc.nextInt();
-        } while (oszlop < 1 || oszlop > 3);
-        return oszlop;
+    public void uzenetKiir(String uzenet) {
+        System.out.print(uzenet);
     }
 
     public void eredmenyKiir(Lap lap) {
