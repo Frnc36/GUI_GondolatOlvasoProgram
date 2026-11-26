@@ -9,7 +9,7 @@ public class Pakli {
 
     }
 
-    private void feltolt() {
+    public void feltolt() {
         String[] szinek = {"P", "T", "Z", "M"};
         String[] ertekek = {"Ász", "Kir", "Fel", "X", "IX", "VIII"};
 

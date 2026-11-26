@@ -10,10 +10,11 @@ public class Program {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 Pakli pakli = new Pakli();
-                GUINezet nezet = new GUINezet();
-                JatekController controller = new JatekController(pakli, nezet);
-
-                nezet.setVisible(true);
+                GUINezet view = new GUINezet();
+                JatekController controller = new JatekController(pakli, view);
+                
+                view.setController(controller);
+                view.setVisible(true);
                 controller.indit();
             }
         });
