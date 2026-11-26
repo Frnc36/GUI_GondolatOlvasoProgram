@@ -100,7 +100,7 @@ public class GUINezet extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Ez volt?");
+        jLabel2.setText("jLabel2");
 
         jButton4.setText("jButton4");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
